@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <fragment
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:name="com.example.fragmentpractice.AFragment"
+      tools:layout="@layout/fragment_a"
+      android:id="@+id/Afrag"
+      android:layout_weight="1"></fragment>
+
+
+    <fragment
+        android:layout_width="match_parent"
+    android:id="@+id/Bfrad"
+          android:layout_weight="1"
+        android:layout_height="match_parent"
+    android:name="com.example.fragmentpractice.BFragment"
+        tools:layout="@layout/fragment_b"
+  >
+    </fragment>
+  <!--    <fragment-->
+  <!--        android:layout_width="match_parent"-->
+  <!--        android:layout_weight="1"-->
+  <!--        android:name="com.example.fragmentunderstanding.AFragment"-->
+  <!--        android:id="@+id/Afragment"-->
+  <!--        android:layout_height="match_parent"-->
+  <!--        tools:layout="@layout/fragment_a" />-->
+
+  <!--    <fragment-->
+  <!--        android:layout_width="match_parent"-->
+  <!--        android:layout_weight="1"-->
+  <!--android:name="com.example.fragmentunderstanding.BFragment"-->
+  <!--        android:id="@+id/Bfragment"-->
+  <!--        android:layout_height="match_parent"-->
+  <!--        tools:layout="@layout/fragment_b" />-->
+
+
+</LinearLayout>
