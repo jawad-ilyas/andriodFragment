@@ -7,39 +7,40 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-  <fragment
+
+
+
+  <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:name="com.example.fragmentpractice.AFragment"
-      tools:layout="@layout/fragment_a"
-      android:id="@+id/Afrag"
-      android:layout_weight="1"></fragment>
+      android:orientation="horizontal"
+      android:layout_height="wrap_content" >
 
 
-    <fragment
-        android:layout_width="match_parent"
-    android:id="@+id/Bfrad"
-          android:layout_weight="1"
-        android:layout_height="match_parent"
-    android:name="com.example.fragmentpractice.BFragment"
-        tools:layout="@layout/fragment_b"
-  >
-    </fragment>
-  <!--    <fragment-->
-  <!--        android:layout_width="match_parent"-->
-  <!--        android:layout_weight="1"-->
-  <!--        android:name="com.example.fragmentunderstanding.AFragment"-->
-  <!--        android:id="@+id/Afragment"-->
-  <!--        android:layout_height="match_parent"-->
-  <!--        tools:layout="@layout/fragment_a" />-->
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btnFragA"
+        android:layout_height="wrap_content"
+      android:text="Frag A" >
 
-  <!--    <fragment-->
-  <!--        android:layout_width="match_parent"-->
-  <!--        android:layout_weight="1"-->
-  <!--android:name="com.example.fragmentunderstanding.BFragment"-->
-  <!--        android:id="@+id/Bfragment"-->
-  <!--        android:layout_height="match_parent"-->
-  <!--        tools:layout="@layout/fragment_b" />-->
+    </Button>
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btnFragB"
+        android:layout_height="wrap_content"
+        android:text="Frag B" >
+
+    </Button>
+  </LinearLayout>
+
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:id="@+id/container"
+      android:layout_height="match_parent">
+
+  </FrameLayout>
 
 
 </LinearLayout>
